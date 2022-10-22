@@ -61,7 +61,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 40px 100px;
+    padding: 10px 20px;
     z-index: 10000;
     display: flex;
     justify-content: space-between;
@@ -327,5 +327,78 @@ section {
 
 .contactForm h3 {
     color: #111;
-    
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
 }
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contactForm .inputBox input[type="submit"]{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.copyrightText {
+    padding: 8px 40px;
+    border-top: 1px solid rgba (0,0,0,0.1);
+    text-align: center;
+}
+
+.copyrightText p {
+    color: #333;
+}
+
+.copyrightText a {
+    color: #ff0157;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media (max-width: 991px){
+
+    header,
+    header.sticky {
+        padding: 10px 20px;
+    }
+    header .navigation {
+        display: none;
+    }
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+}
+
